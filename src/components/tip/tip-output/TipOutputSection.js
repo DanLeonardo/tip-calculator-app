@@ -22,8 +22,8 @@ const TipOutputSection = ({ tipData }) => {
   return (
     <div className="tip-section-container tip-output-section">
       <div className="tip-section">
-        <TipDisplay label="Tip amount" value={tipTotal} />
-        <TipDisplay label="Amount" value={tipPerPerson} />
+        <TipDisplay label="Tip amount" subtitle="/ person" value={tipTotal} />
+        <TipDisplay label="Amount" subtitle="/ person" value={tipPerPerson} />
         <TipDisplay label="Bill Total" value={totalBill} />
         <div className="reset-spacer"></div>
         <div className="reset-section">

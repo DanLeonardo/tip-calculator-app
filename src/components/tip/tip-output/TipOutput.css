@@ -1,0 +1,57 @@
+.tip-output-section {
+  background-color: var(--color-very-dark-cyan);
+  color: var(--color-white);
+  padding: 2rem;
+}
+
+.tip-display {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.tip-display > div {
+  flex: 1;
+}
+
+.tip-display-label {
+}
+
+.per-person {
+  color: var(--color-dark-grayish-cyan);
+}
+
+.tip-output-txt {
+  text-align: right;
+  color: var(--color-strong-cyan);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.reset-spacer {
+  min-height: 60px;
+}
+
+.reset-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.reset-section button {
+  width: 100%;
+  border: none;
+  border-radius: var(--border-radius-normal);
+  padding: 1rem;
+  background-color: var(--color-dark-grayish-cyan);
+  color: var(--color-grayish-cyan);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.reset-section button:hover {
+  background-color: var(--color-strong-cyan);
+  color: var(--color-very-dark-cyan);
+}

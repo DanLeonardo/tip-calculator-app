@@ -1,0 +1,26 @@
+.tip-container {
+  background-color: var(--color-white);
+  width: 1000px;
+  border-radius: var(--border-radius-normal);
+  margin-top: 4rem;
+  padding: 1rem;
+  display: flex;
+}
+
+@media screen and (max-width: 1023px) {
+  .tip-container {
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+.tip-section-container {
+  flex: 1;
+  border-radius: var(--border-radius-normal);
+  margin: 1rem;
+}
+
+.tip-section {
+  height: 100%;
+  position: relative;
+}

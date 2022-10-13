@@ -1,0 +1,54 @@
+.tip-amount-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tip-amount-item {
+  flex: 0;
+  flex-basis: 33%;
+}
+
+.tip-amount-input {
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: var(--border-radius-sharp);
+  background-color: var(--color-very-dark-cyan);
+  color: var(--color-white);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tip-amount-input:hover {
+  background-color: var(--color-grayish-cyan);
+  color: var(--color-very-dark-cyan);
+}
+
+.tip-amount-input.selected {
+  background-color: var(--color-strong-cyan);
+  color: var(--color-very-dark-cyan);
+}
+
+.tip-amount-input.custom {
+  background-color: var(--color-very-light-grayish-cyan);
+  color: var(--color-very-dark-cyan);
+}
+
+.tip-amount-input.custom:hover {
+  box-shadow: 0 0 0 3px var(--color-strong-cyan);
+}
+
+.tip-amount-input input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--color-very-dark-cyan);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}

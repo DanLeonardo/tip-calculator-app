@@ -1,0 +1,37 @@
+.titled-input-section:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.titled-input-title {
+  color: var(--color-dark-grayish-cyan);
+  font-weight: 700;
+}
+
+.titled-input {
+  padding: 0.25rem;
+  background-color: var(--color-very-light-grayish-cyan);
+  border-radius: var(--border-radius-normal);
+  display: flex;
+  align-items: center;
+}
+
+.titled-input:hover {
+  /* border: 3px solid var(--color-strong-cyan); */
+  box-shadow: 0 0 0 3px var(--color-strong-cyan);
+}
+
+.titled-input,
+.titled-input * {
+  cursor: pointer;
+}
+
+.titled-input input {
+  flex: 1;
+  text-align: right;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 24px;
+  color: var(--color-very-dark-cyan);
+  font-weight: 700;
+}

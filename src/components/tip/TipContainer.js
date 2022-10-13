@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import TipInputSection from './tip-input/TipInputSection';
 import TipOutputSection from './tip-output/TipOutputSection';

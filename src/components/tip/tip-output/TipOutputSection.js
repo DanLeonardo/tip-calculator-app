@@ -1,6 +1,5 @@
 import TipDisplay from './tip-display/TipDisplay';
 import TipCalculator from '../../../services/TipCalculator';
-import CurrencyStringFormatter from '../../../utils/CurrencyStringFormatter';
 
 import './TipOutput.css';
 

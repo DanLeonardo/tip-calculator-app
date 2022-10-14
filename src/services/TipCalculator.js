@@ -16,10 +16,12 @@ class TipCalculator {
 
     const totalTip =
       tipPercentFloat !== 0 ? billTotalFloat * (tipPercentFloat / 100.0) : 0;
-    const tipPerPerson = totalTip / numPeopleInt;
-    const totalBill = billTotalFloat + totalTip;
 
-    const tipData = { totalTip, tipPerPerson, totalBill };
+    const tipPerPerson = totalTip !== 0 ? totalTip / numPeopleInt : 0;
+    const totalBill = billTotalFloat + totalTip;
+    const totalPerPerson = totalBill / numPeopleInt;
+
+    const tipData = { tipPerPerson, totalPerPerson, totalBill };
     return tipData;
   }
 }

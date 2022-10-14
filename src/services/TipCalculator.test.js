@@ -8,8 +8,8 @@ describe('TipCalculator', () => {
 
     const tipData = TipCalculator.calculateTip(bill, people, tip);
 
-    expect(tipData.totalTip).toBe(25);
     expect(tipData.tipPerPerson).toBe(25);
+    expect(tipData.totalPerPerson).toBe(125);
     expect(tipData.totalBill).toBe(125);
   });
 
@@ -20,8 +20,8 @@ describe('TipCalculator', () => {
 
     const tipData = TipCalculator.calculateTip(bill, people, tip);
 
-    expect(tipData.totalTip).toBe(20);
     expect(tipData.tipPerPerson).toBe(10);
+    expect(tipData.totalPerPerson).toBe(60);
     expect(tipData.totalBill).toBe(120);
   });
 
@@ -32,8 +32,8 @@ describe('TipCalculator', () => {
 
     const tipData = TipCalculator.calculateTip(bill, people, tip);
 
-    expect(tipData.totalTip).toBe(86.085);
     expect(tipData.tipPerPerson).toBe(86.085);
+    expect(tipData.totalPerPerson).toBe(564.335);
     expect(tipData.totalBill).toBe(564.335);
   });
 });

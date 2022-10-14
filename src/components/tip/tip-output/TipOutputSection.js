@@ -15,15 +15,15 @@ const TipOutputSection = ({ tipData }) => {
     tipData.tipAmount
   );
 
-  const tipTotal = calculatedTip.totalTip;
-  const tipPerPerson = calculatedTip.tipPerPerson;
+  const tipTotal = calculatedTip.tipPerPerson;
+  const totalPerPerson = calculatedTip.totalPerPerson;
   const totalBill = calculatedTip.totalBill;
 
   return (
     <div className="tip-section-container tip-output-section">
       <div className="tip-section">
         <TipDisplay label="Tip amount" subtitle="/ person" value={tipTotal} />
-        <TipDisplay label="Amount" subtitle="/ person" value={tipPerPerson} />
+        <TipDisplay label="Total" subtitle="/ person" value={totalPerPerson} />
         <TipDisplay label="Bill Total" value={totalBill} />
         <div className="reset-spacer"></div>
         <div className="reset-section">

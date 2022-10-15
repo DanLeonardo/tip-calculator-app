@@ -1,6 +1,3 @@
-import { useEffect } from 'react';
-import useInput from '../../hooks/useInput';
-
 import './TitledInput.css';
 
 /**

@@ -5,15 +5,13 @@ import './TipOutput.css';
 
 /**
  *
- * @param {{tipData: {billAmount: string, numPeople: string, tipAmount: string}}} props
+ * @param {*} props
  * @returns
  */
-const TipOutputSection = ({ tipData }) => {
-  const calculatedTip = TipCalculator.calculateTip(
-    tipData.billAmount,
-    tipData.numPeople,
-    tipData.tipAmount
-  );
+const TipOutputSection = ({ tipData, resetHandler }) => {
+  const { bill, tip, people } = tipData;
+
+  const calculatedTip = TipCalculator.calculateTip(bill, people, tip);
 
   const tipTotal = calculatedTip.tipPerPerson;
   const totalPerPerson = calculatedTip.totalPerPerson;
@@ -27,7 +25,7 @@ const TipOutputSection = ({ tipData }) => {
         <TipDisplay label="Bill Total" value={totalBill} />
         <div className="reset-spacer"></div>
         <div className="reset-section">
-          <button>RESET</button>
+          <button onClick={resetHandler}>RESET</button>
         </div>
       </div>
     </div>

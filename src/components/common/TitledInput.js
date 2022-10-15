@@ -1,17 +1,25 @@
+import { useEffect } from 'react';
+import useInput from '../../hooks/useInput';
+
 import './TitledInput.css';
 
-const TitledInput = (props) => {
+/**
+ *
+ * @param {*} props
+ * @returns
+ */
+const TitledInput = ({ title, icon, alt, input }) => {
   return (
     <div className="titled-input-section">
-      <div className="titled-input-title">{props.title}</div>
+      <div className="titled-input-title">{title}</div>
       <div className="titled-input">
-        <img src={props.icon} alt={props.alt}></img>
+        <img src={icon} alt={alt}></img>
         <input
           type="number"
           min="0"
           placeholder="0"
-          value={props.input.value}
-          onChange={props.input.onChange}
+          value={input.value}
+          onChange={input.onChange}
         ></input>
       </div>
     </div>

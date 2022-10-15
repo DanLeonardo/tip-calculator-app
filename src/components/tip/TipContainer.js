@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import useInput from '../../hooks/useInput';
 
 import TipInputSection from './tip-input/TipInputSection';
 import TipOutputSection from './tip-output/TipOutputSection';
@@ -6,28 +6,26 @@ import TipOutputSection from './tip-output/TipOutputSection';
 import './TipContainer.css';
 
 const TipContainer = () => {
-  const [bill, setBill] = useState('');
-  const [tip, setTip] = useState('');
-  const [people, setPeople] = useState('');
+  const bill = useInput('');
+  const tip = useInput('');
+  const people = useInput('');
 
   /**
-   *
-   * @param {*} bill
-   * @param {*} tip
-   * @param {*} people
+   * Resets state by setting bill, tip, and people to ''.
    */
-  const updateInputs = (bill, tip, people) => {
-    setBill(bill);
-    setTip(tip);
-    setPeople(people);
+  const resetInputs = () => {
+    console.log('Clearing inputs');
+    bill.setValue('');
+    tip.setValue('');
+    people.setValue('');
   };
 
-  const tipData = { billAmount: bill, tipAmount: tip, numPeople: people };
+  const tipData = { bill: bill.value, tip: tip.value, people: people.value };
 
   return (
     <div className="tip-container">
-      <TipInputSection updateInputs={updateInputs} />
-      <TipOutputSection tipData={tipData} />
+      <TipInputSection bill={bill} tip={tip} people={people} />
+      <TipOutputSection tipData={tipData} resetHandler={resetInputs} />
     </div>
   );
 };

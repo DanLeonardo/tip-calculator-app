@@ -11,6 +11,12 @@
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 500px) {
+  .tip-display {
+    flex-direction: column;
+  }
+}
+
 .tip-display > div {
   flex: 1;
 }

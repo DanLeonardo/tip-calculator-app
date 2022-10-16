@@ -8,6 +8,12 @@
   flex-basis: 33%;
 }
 
+@media screen and (max-width: 500px) {
+  .tip-amount-item {
+    flex-basis: 50%;
+  }
+}
+
 .tip-amount-input {
   margin: 0.5rem;
   padding: 1rem;

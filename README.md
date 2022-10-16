@@ -24,7 +24,7 @@ Users should be able to:
 ### To DO
 
 - ~~Implement reset button~~
-- Fix rendering issues at smaller screen siz
+- ~~Fix rendering issues at smaller screen siz~~
 
 ### Links
 

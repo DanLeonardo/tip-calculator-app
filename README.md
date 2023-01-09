@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Github: https://github.com/DanLeonardo/tip-calculator-app
-- Hosted at: https://dleonardo-tip-calculator.herokuapp.com/
+- Hosted at: ~~https://dleonardo-tip-calculator.herokuapp.com/~~
 
 ## My process
 
